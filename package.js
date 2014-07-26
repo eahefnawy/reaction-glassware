@@ -1,17 +1,13 @@
 Package.describe({
-  summary: "Reaction Paypal - Paypal payments for Reaction Commerce"
+  summary: "Reaction Glassware - Google Glass App for Your Reaction Shop"
 });
 
-Npm.depends({'paypal-rest-sdk': '0.9.3'});
+Npm.depends({'googleapis': '1.0.2'});
 
 Package.on_use(function (api, where) {
   api.use([
-    "templating",
     "coffeescript",
     "iron-router",
-    "simple-schema",
-    "autoform",
-    "underscore-string-latest",
     "less",
     "reaction-core"
   ], ["client", "server"]);
